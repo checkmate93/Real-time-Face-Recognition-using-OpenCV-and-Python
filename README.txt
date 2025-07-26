@@ -1,91 +1,84 @@
              A job of Mantousis Evangelos
+
 # 🎯 Real-time Face Recognition using OpenCV and Python
 
-This project implements **real-time face recognition** using Python, OpenCV, and the `face_recognition` library. It is suitable for building attendance systems, access control mechanisms, or learning about computer vision and machine learning.
+A simple and functional real-time face recognition system using Python and OpenCV.
 
 ---
 
-## 📦 Environment Specifications (Virtual Env)
+## 🏃 Quick Start
 
-To ensure compatibility, use the **exact versions** below:
+1. **Download or clone the project**
+2. **Open it with PyCharm**
+3. **Make sure Python 3.10 is installed**
+4. **Install required libraries** (see below)
+5. **Place your known faces in the `images/` folder**
+6. **Run `main.py`**
 
-| Package           | Version                         |
-|------------------|----------------------------------|
-| Python           | 3.10 (64-bit)                   |
-| dlib             | 19.22.99 *(custom precompiled)* |
-| face_recognition | 1.2.3 *(or 1.3.0 for better compatibility)* |
-| numpy            | 1.24.4 *(do NOT use version 2.x!)*
-| opencv-python    | 4.11.0.86                       |
-| pillow           | 11.3.0                          |
-| cmake            | 4.0.3                           |
-| cvzone           | 1.6.1                           |
-| colorama         | 0.4.6                           |
-| click            | 8.2.1                           |
-
-> ⚠️ **Important:** Using other version combinations may cause errors or unexpected behavior.
+✅ That’s it! The webcam will start, and known faces will be recognized and logged.
 
 ---
 
-## 🛠 Installation
+## 📦 Required Libraries
 
-1. **Clone the repository:**
+Install the following packages (you can use the terminal in PyCharm):
 
 ```bash
+pip install dlib==19.22.99
+pip install face_recognition==1.2.3
+pip install numpy==1.24.4
+pip install opencv-python==4.11.0.86
+pip install pillow==11.3.0
+pip install cmake==4.0.3
+pip install cvzone==1.6.1
+pip install colorama==0.4.6
+pip install click==8.2.1
+⚠️ Do not use newer versions (especially of dlib, numpy, or face_recognition) unless you test compatibility.
+also the install can be with intepreter button
+
+🛠 Full Installation (Detailed)
+1. Clone the Repository
+bash
+Αντιγραφή
+Επεξεργασία
 git clone https://github.com/your-username/Real-time-Face-Recognition-using-OpenCV-and-Python.git
 cd Real-time-Face-Recognition-using-OpenCV-and-Python
-Create and activate a virtual environment:
-
+2. Create a Virtual Environment
 bash
 Αντιγραφή
 Επεξεργασία
 python -m venv venv
 venv\Scripts\activate  # On Windows
-Install required packages:
-
+3. Install All Requirements
 bash
 Αντιγραφή
 Επεξεργασία
 pip install -r requirements.txt
-🚀 Run the Application
-To run the program:
+If requirements.txt is not included, use the manual installation above.
 
-Open main.py
-
-Activate the virtual environment
-
-Execute:
-
-bash
-Αντιγραφή
-Επεξεργασία
-python main.py
-📂 Suggested Project Structure
+📂 Folder Structure
 perl
 Αντιγραφή
 Επεξεργασία
 Real-time-Face-Recognition-using-OpenCV-and-Python/
 │
 ├── images/               # Folder with known face images
-├── Attendance.csv        # CSV log file for recognized faces
-├── main.py               # Main script
+├── Attendance.csv        # Automatically generated attendance log
+├── main.py               # Main script to run
 ├── requirements.txt
-├── README.md
-└── .gitignore
-🧠 What main.py Does
-Loads known face encodings from images/
+└── README.md
+🚀 How It Works
+Loads faces from images/
 
-Opens webcam feed
+Starts webcam and performs live face detection
 
-Detects and recognizes faces in real-time
+Recognizes known faces
 
-Logs attendance (with name & timestamp) into Attendance.csv
+Logs attendance in Attendance.csv (name + timestamp)
 
-⚙️ Requirements
-Webcam access
-
-Properly cropped face images in images/ directory
-
-Matching versions of all dependencies
+🧠 Credits
+Created by checkmate93
+A lightweight and educational implementation of real-time face recognition.
 
 🙌 Credits
 Developed by checkmate93
